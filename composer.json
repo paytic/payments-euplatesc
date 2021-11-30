@@ -1,0 +1,35 @@
+{
+  "name": "paytic/payments-euplatesc",
+  "type": "library",
+  "license": "MIT",
+  "description": "Payments module for bytic library for euplatesc",
+  "keywords": [],
+  "homepage": "https://github.com/paytic/payments-euplatesc",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Paytic\\Payments\\Euplatesc\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Paytic\\Payments\\Euplatesc\\Tests\\": "tests/src",
+      "Paytic\\Payments\\Euplatesc\\Tests\\Fixtures\\": "tests/fixtures"
+    }
+  },
+  "require": {
+    "php": "^7.2|^8.0",
+    "paytic/omnipay-euplatesc": "^3.0"
+  },
+  "require-dev": {
+    "ext-zlib": "*",
+    "symfony/dom-crawler": "^3.3|^4.0|^5.0",
+    "bytic/payments": "^1.0",
+    "paytic/payments-tests": "^1.0"
+  }
+}
